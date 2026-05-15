@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.profile {
+    background-color: white;
+    width: 300px;
+}
+
+.profile h1 {
+    color: lightskyblue;
+}

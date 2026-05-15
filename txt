@@ -1,0 +1,14 @@
+Node_module - Extra library and packages
+src - Our source code
+public - Public assets like html and images
+.gitignore - Files to be ignored by git
+package.json - Manages project dependencies and scripts
+package-lock.json - Keeps track of exact dependency versions
+vite.config.js - Configures the Vite build tool
+index.html - The main entry point for our web application
+App.jsx - The main component of our application
+main.jsx - Renders the App component to the DOM
+
+
+Dom - Document object model (HTML representation of the web page)
+Components - Reusable UI building blocks
