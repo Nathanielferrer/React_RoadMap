@@ -1,3 +1,6 @@
+//Problem: The dot is not moving when the checkbox is checked.
+//Solution: Add [canMove] to the dependency array to prevent it from not moving when the checkbox is checked.
+
 import { useState, useEffect } from 'react';
 
 export default function App() {
@@ -5,8 +8,8 @@ export default function App() {
     const [canMove, setCanMove] = useState(true);
 
     useEffect(() => {
-        function handleMove(e) {
-            if (canMove) {
+        function handleMove(e) {    //Add a condition to check if the checkbox is checked
+            if (canMove) {  //This can be either true or false base if user checked or unchecked
                 setPosition({ x: e.clientX, y: e.clientY });
             }
         }

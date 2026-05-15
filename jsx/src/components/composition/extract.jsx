@@ -32,7 +32,7 @@ function Profile({ person }) {  //This is the props being passed to the Profile 
 }
 
 
-export default function Gallery() {
+export default function Gallery() { //This will be the parent component.
     return (
         <>
             <h1>Notable Scientists</h1>

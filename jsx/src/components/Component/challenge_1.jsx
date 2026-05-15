@@ -1,3 +1,6 @@
+//Problem 1: When the user input the it always reconnect to the roomId
+//Solution: Add the [roomId] Dependency Array to the useEffect to prevent it from reconnecting to the roomId when the user input the text
+
 import { useState, useEffect } from 'react';
 import { createConnection } from './chat.js';
 
@@ -10,7 +13,7 @@ function ChatRoom({ roomId }) {
         const connection = createConnection(serverUrl, roomId);
         connection.connect();
         return () => connection.disconnect();
-    }, [roomId]);
+    }, [roomId]);   //It will run useEffect only when the roomId changes.
 
     return (
         <>

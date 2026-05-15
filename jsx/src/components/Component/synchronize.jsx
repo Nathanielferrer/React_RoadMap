@@ -5,10 +5,10 @@ const serverUrl = "https://localhost:1234";
 
 function ChatRoom({ roomId }) {
     useEffect(() => {
-        const connection = createConnection(serverUrl, roomId);
+        const connection = createConnection(serverUrl, roomId); //create the connection for the selected room id
         connection.connect();
-        return () => connection.disconnect();
-    }, [roomId]);
+        return () => connection.disconnect();   //This shortcut function taht is resposible to disconnect selected room like general when you move to another id
+    }, [roomId]);   //This dependency array is responsible for the useEffect to run only when the roomId changes
     return <h1>Welcome to the {roomId} room!</h1>;
 }
 
