@@ -1,0 +1,7 @@
+You will learn:
+How to access a DOM node managed by React with the ref attribute
+How the ref JSX attribute relates to the useRef Hook
+How to access another component’s DOM node
+In which cases it’s safe to modify the DOM managed by React
+
+JSX Attribute - onClick, onChange, onMouseEnter, onMouseLeave, etc.
