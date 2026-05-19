@@ -6,12 +6,12 @@ function DebouncedButton({ onClick, children }) {
 
   return (
     <button onClick={() => {
-      clearTimeout(timeoutID.current);    //Clearing the timeout ID
+      clearTimeout(timeoutID.current);    //Cancelling the previous time running timeout
       timeoutID.current = setTimeout(() => {   //Storing the timeout ID
         onClick();
-      }, 1000);
+      }, 1000);    //Setting a new timeout with a delay of 1000ms
     }}>
-      {children}
+      {children}   {/*Children are the contents of the component*/}
     </button>
   );
 }

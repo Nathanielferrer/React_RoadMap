@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 
 export default function Stopwatch() {
-  const [startTime, setStahanrtTime] = useState(null);    // startTime stores the timestamp when the Start button is clicked.
+  const [startTime, setStartTime] = useState(null);    // startTime stores the timestamp when the Start button is clicked.
   const [now, setNow] = useState(null);                // now stores the latest/current timestamp while the stopwatch is running.
   const intervalRef = useRef(null);                    // intervalRef stores the interval ID returned by setInterval.
   // We use this ID later to stop the timer with clearInterval.
