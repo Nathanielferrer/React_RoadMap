@@ -1,0 +1,207 @@
+/* ===== Expense List Styles ===== */
+
+.expense-container {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 36px 32px;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #e4e4ef;
+}
+
+/* ===== Title ===== */
+.expense-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 28px;
+    background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+/* ===== Form Row ===== */
+.expense-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.expense-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #e4e4ef;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.expense-input::placeholder {
+    color: rgba(228, 228, 239, 0.35);
+}
+
+.expense-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.expense-add-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.expense-add-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.4);
+}
+
+.expense-add-btn:active {
+    transform: translateY(0);
+    opacity: 0.9;
+}
+
+/* ===== Total Bar ===== */
+.expense-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.expense-total-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(228, 228, 239, 0.7);
+}
+
+.expense-total-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #a78bfa;
+}
+
+/* ===== List ===== */
+.expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== Item ===== */
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background 0.2s ease, transform 0.15s ease;
+    animation: slideIn 0.3s ease forwards;
+}
+
+.expense-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateX(4px);
+}
+
+.expense-item-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.expense-item-category {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #e4e4ef;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expense-item-amount {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #a78bfa;
+    white-space: nowrap;
+}
+
+.expense-item-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(228, 228, 239, 0.25);
+    flex-shrink: 0;
+}
+
+.expense-delete-btn {
+    padding: 6px 14px;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: 8px;
+    background: rgba(239, 68, 68, 0.08);
+    color: #f87171;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    flex-shrink: 0;
+    margin-left: 12px;
+}
+
+.expense-delete-btn:hover {
+    background: rgba(239, 68, 68, 0.18);
+    border-color: rgba(239, 68, 68, 0.4);
+    transform: scale(1.05);
+}
+
+.expense-delete-btn:active {
+    transform: scale(0.97);
+}
+
+/* ===== Empty State ===== */
+.expense-empty {
+    text-align: center;
+    padding: 32px 16px;
+    color: rgba(228, 228, 239, 0.3);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* ===== Animations ===== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

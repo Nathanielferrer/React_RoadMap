@@ -1,0 +1,173 @@
+/* tasklist.css */
+/* Stylesheet for the Task List practice project */
+
+.task-app-card {
+    max-width: 500px;
+    margin: 40px auto;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: var(--shadow);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-app-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.task-app-header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+}
+
+.task-app-header h2 {
+    margin: 0 0 6px 0;
+    font-size: 28px;
+    color: var(--text-h);
+}
+
+.task-app-subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/* Form Styles */
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.task-input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text-h);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+.add-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-btn:hover {
+    filter: brightness(1.1);
+}
+
+.add-btn:active {
+    transform: scale(0.97);
+}
+
+/* Tasks List Styles */
+.no-tasks-prompt {
+    text-align: center;
+    color: var(--text);
+    padding: 20px 0;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.tasks-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background: var(--social-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.task-item:hover {
+    border-color: var(--accent-border);
+    transform: translateY(-1px);
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    margin-right: 12px;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    accent-color: var(--accent);
+}
+
+.task-text {
+    font-size: 16px;
+    color: var(--text-h);
+    word-break: break-word;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Completed Task Styles */
+.task-item.completed {
+    background: var(--code-bg);
+    opacity: 0.65;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: var(--text);
+}
+
+/* Delete Button Styles */
+.delete-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ef4444;
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #fff;
+    background-color: #ef4444;
+    border-color: #ef4444;
+}
+
+.delete-btn:active {
+    transform: scale(0.95);
+}

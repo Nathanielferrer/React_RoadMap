@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 
 export default function Counter() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const ref = useRef(null);
 
   return (

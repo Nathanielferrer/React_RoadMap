@@ -1,19 +1,17 @@
-import { useState, useRef } from 'react'
-import TaskForm from './TaskForm'
+// MainApp.jsx
+// This is the main container for the Task List practice project.
+// It imports and renders the TaskList component which manages the application state and layout.
+import TaskList from './TaskList'
+import './tasklist.css' // Import custom styling for our Task List project
 
-export default function TaskList() {
-    const [tasks, setTasks] = useState([{}]);
-    const [input, setInput] = useState("");
-    const inputRef = useRef(null);
-
-
+export default function MainApp() {
     return (
-        <>
-            <TaskForm
-                input={input}
-                setInput={setInput}
-                inputRef={inputRef}
-            />
-        </>
+        <div className="task-app-card">
+            <header className="task-app-header">
+                <h2>Practice Project: Task List</h2>
+                <p className="task-app-subtitle">Build, toggle, and manage your daily tasks.</p>
+            </header>
+            <TaskList />
+        </div>
     )
 }
