@@ -12,27 +12,31 @@
 // import Synchronize from './components/Component/synchronize.jsx'
 // import Counter from './components/Dom_Refs/manipulation.jsx'
 // import MainApp from './Small_Projects/Task_List/MainApp.jsx'
-import Expense from './Small_Projects/Simple_Expense_List/Main_App.jsx'
+// import Expense from './Small_Projects/Simple_Expense_List/Main_App.jsx'
+// import LiveClock from './components/Use_Effects/Clock.jsx'
+import ColorChanger from './components/Use_Effects/Color_changer.jsx'
 import './App.css'
 
 function App() {
-  return (
-    <>
-      {/* <MyGallery /> */}
-      {/* <Inputfield /> */}
-      {/* <FeedbackForm /> */}
-      {/* <FeedbackForm1 /> */}
-      {/* <DrinkList /> */}
-      {/* <Profile /> */}
-      {/* <Clock color="red" /> */}
-      {/* <Card /> */}
-      {/* <MessageList /> */}
-      {/* <Synchronize /> */}
-      {/* <Counter /> */}
-      {/* <MainApp /> */}
-      <Expense />
-    </>
-  )
+    return (
+        <>
+            {/* <MyGallery /> */}
+            {/* <Inputfield /> */}
+            {/* <FeedbackForm /> */}
+            {/* <FeedbackForm1 /> */}
+            {/* <DrinkList /> */}
+            {/* <Profile /> */}
+            {/* <Clock color="red" /> */}
+            {/* <Card /> */}
+            {/* <MessageList /> */}
+            {/* <Synchronize /> */}
+            {/* <Counter /> */}
+            {/* <MainApp /> */}
+            {/* <Expense /> */}
+            {/* <LiveClock /> */}
+            <ColorChanger />
+        </>
+    )
 }
 
 export default App

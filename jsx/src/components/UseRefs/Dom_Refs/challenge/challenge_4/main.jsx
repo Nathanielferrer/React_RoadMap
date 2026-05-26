@@ -1,5 +1,5 @@
 import SearchButton from './SearchButton.js';
-import SearchInput from './SearchInput.js';
+import SearchInput from './searchInput.js';
 import { useRef } from 'react' //Importing the useRef hook from the react library
 
 export default function Page() {
