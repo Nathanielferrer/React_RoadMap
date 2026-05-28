@@ -14,7 +14,11 @@
 // import MainApp from './Small_Projects/Task_List/MainApp.jsx'
 // import Expense from './Small_Projects/Simple_Expense_List/Main_App.jsx'
 // import LiveClock from './components/Use_Effects/Clock.jsx'
-import ColorChanger from './components/Use_Effects/Color_changer.jsx'
+// import ColorChanger from './components/Use_Effects/Color_changer.jsx'
+// import ObjectArrays from './components/Use_State/Object.jsx'
+// import Counter from './components/Use_State/Count.jsx'
+// import CountMemo from './components/Use_Memo/countMemo.jsx'
+import Ecommerce from './components/Use_Memo/memo.jsx'
 import './App.css'
 
 function App() {
@@ -34,7 +38,11 @@ function App() {
             {/* <MainApp /> */}
             {/* <Expense /> */}
             {/* <LiveClock /> */}
-            <ColorChanger />
+            {/* <ColorChanger /> */}
+            {/* <ObjectArrays /> */}
+            {/* <Counter /> */}
+            {/* <CountMemo /> */}
+            <Ecommerce />
         </>
     )
 }

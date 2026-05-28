@@ -1,0 +1,5 @@
+useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
+
+The main purpose of useMemo is to avoid filtering the product everytime the component re-render.
+Example: Clicking darkmode will trigger the filtering function to run again, which is not necessary.
+so with the use of useMemo we can cache the result of filtering the product and only run it when the search state changes.
