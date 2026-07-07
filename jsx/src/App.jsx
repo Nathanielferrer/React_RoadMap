@@ -18,7 +18,14 @@
 // import ObjectArrays from './components/Use_State/Object.jsx'
 // import Counter from './components/Use_State/Count.jsx'
 // import CountMemo from './components/Use_Memo/countMemo.jsx'
-import Ecommerce from './components/Use_Memo/memo.jsx'
+// import Ecommerce from './components/Use_Memo/memo.jsx'
+import CoffeeShopApp from './Small_Projects/Coffee_Shop/App.jsx'
+
+
+// import { AuthProvider } from './components/Context/context_api.jsx';
+// import Navbar from './components/Context/Navbar.jsx';
+// import Content from './components/Context/content.jsx';
+import Apps from './components/Zustand/App.jsx';
 import './App.css'
 
 function App() {
@@ -42,7 +49,13 @@ function App() {
             {/* <ObjectArrays /> */}
             {/* <Counter /> */}
             {/* <CountMemo /> */}
-            <Ecommerce />
+            {/* <Ecommerce /> */}
+            <CoffeeShopApp />
+            {/* <AuthProvider>
+                <Navbar /> {/* Components that will have an access to the current value in the context. All the components inside the auth will have an access to the anme and can be use it*/}
+            {/* <Content />
+            </AuthProvider> */}
+            {/* <Apps /> */}
         </>
     )
 }

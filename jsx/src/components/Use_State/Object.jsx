@@ -11,9 +11,9 @@ export default function ObjectArrays() {
             <label>First Name:</label>
             <input
                 value={form.firstname}  //This is the value of the input field.
-                onChange={e => {
+                onChange={e => {    //This is an event handler run everytime the input value changes
                     setForm({
-                        ...form,            //this is spread syntax that means copying the existing state.
+                        ...form,            //this is spread operator syntax that means copying the existing state.
                         firstname: e.target.value //then update the value.
                     })
                 }}

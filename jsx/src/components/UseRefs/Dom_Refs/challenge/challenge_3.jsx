@@ -6,7 +6,7 @@ export default function CatFriends() {
     const selectedRef = useRef(null)       //Adding ref to the cat element    
 
     function horizontalScroll() {         //Adding a function to scroll to the selected cat
-        selectedRef.current?.scrollIntoView({      //Using ? to check if the ref is null
+        selectedRef.current?.scrollIntoView({      //Using ? to check if the ref is null or not
             behavior: 'smooth',             //Specifying the behavior of the scroll
             block: 'nearest',             //Specifying the block of the scroll
             inline: 'center'              //Specifying the inline of the scroll

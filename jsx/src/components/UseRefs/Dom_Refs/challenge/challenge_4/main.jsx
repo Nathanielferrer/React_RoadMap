@@ -1,4 +1,4 @@
-import SearchButton from './SearchButton.js';
+import SearchButton from './searchButton.js';
 import SearchInput from './searchInput.js';
 import { useRef } from 'react' //Importing the useRef hook from the react library
 

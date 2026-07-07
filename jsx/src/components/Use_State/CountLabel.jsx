@@ -8,9 +8,6 @@ export default function CountLabel({ count }) { //This is the prop from the pare
         setPrevCount(count) //this is updating the previous value of the count.
         setCurrentStatus(count > prevCount ? 'Increasing' : 'Decreasing') //this is updating the current status of the count.
     }
-
-
-
     return (
         <h1>Count: {count} {currentStatus}</h1>
     )

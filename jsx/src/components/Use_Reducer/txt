@@ -1,0 +1,1 @@
+useReducer is for complex state updates where you centralize all update logic in a reducer function and trigger changes through actions (dispatch).

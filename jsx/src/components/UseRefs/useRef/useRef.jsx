@@ -42,6 +42,7 @@ export default function CatFriends() {
                     Bella
                 </button>
             </nav>
+
             <div>
                 <ul>
                     <li>

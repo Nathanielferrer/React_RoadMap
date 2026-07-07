@@ -8,7 +8,7 @@ export default function VideoPlayer() {
     const nextIsPlaying = !isPlaying;
     setIsPlaying(nextIsPlaying);
 
-    if (nextIsPlaying) {  //Add a condittion to check if the video is playing or not
+    if (nextIsPlaying) {  //This will be the base if it is true or false. If true run the video if false pause the video the nextIsPlaying will be either true or false
       videoRef.current.play()    //If the video is not playing, play it using ref attribute
     } else {
       videoRef.current.pause()    //If the video is playing, pause it using ref attribute

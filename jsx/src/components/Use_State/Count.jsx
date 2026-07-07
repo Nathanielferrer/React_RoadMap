@@ -12,6 +12,7 @@ export default function Counter() {
             <button onClick={() => setCount(count - 1)}>
                 Decrement
             </button>
+
             <CountLabel count={count} />    {/*This is the CountLabel component that will display the current value of the count.*/}
         </>
     )

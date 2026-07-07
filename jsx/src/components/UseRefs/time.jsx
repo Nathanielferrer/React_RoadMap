@@ -17,6 +17,7 @@ export default function Stopwatch() {
 
     // Stop any existing interval first.
     // This prevents multiple timers from running if Start is clicked repeatedly.
+    //Like before starting a new one stop any existing running time
     clearInterval(intervalRef.current);
 
     // Start a new interval that updates "now" every 10 milliseconds.
