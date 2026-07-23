@@ -28,10 +28,10 @@ export default function Chat() {
             <button
                 disabled={isSending} //Disabling the button when isSending is true
                 onClick={handleSend}>
-                {isSending ? 'Sending...' : 'Send'}
+                {isSending ? 'Sending...' : 'Send'}     {/*Change the text in the button if the isSending is True if false nothing using ? */}
             </button>
             {isSending &&
-                <button onClick={handleUndo}>
+                <button onClick={handleUndo}>   {/*Display the button if the isSending is True if false nothing using && */}
                     Undo
                 </button>
             }

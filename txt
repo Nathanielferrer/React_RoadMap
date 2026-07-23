@@ -12,3 +12,8 @@ main.jsx - Renders the App component to the DOM
 
 Dom - Document object model (HTML representation of the web page)
 Components - Reusable UI building blocks
+
+? - is a ternary operator shortcut for if else 
+=== equality Operator it checks if both value and type is the same
+=> - Arrow function
+The parameter is a variable that receives a value when the function is called.

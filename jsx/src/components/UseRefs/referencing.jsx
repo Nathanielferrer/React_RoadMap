@@ -1,3 +1,6 @@
+//The useref is commonly use when accessing the DOM elements.
+//IT can be used to Remember the ID and references.
+
 import { useRef } from 'react';
 
 export default function useRefs() {
